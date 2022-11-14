@@ -69,17 +69,17 @@ svg {
 /* MAIN CSS STYLINGS */
 :root {
   /* COLORS */
-  --color-primary-100: ;
+  --color-primary-100: hsl(222, 40%, 60%);
   --color-primary-200: hsl(222, 40%, 50%);
-  --color-primary-300: ;
+  --color-primary-300: hsl(222, 40%, 30%);
   --color-primary-400: hsl(222, 40%, 24%);
-  --color-primary-500: hsl(222, 40%, 24%);
+  --color-primary-500: hsl(222, 40%, 20%);
   --color-primary-600: ;
-  --color-primary-700: ;
+  --color-primary-700: hsl(222, 40%, 18%);
   --color-primary-800: ;
   --color-primary-900: hsl(222, 40%, 10%);
 
-  --color-accent-400: ;
+  --color-accent-400: hsl(240, 100%, 7%);
 
   --color-grey-100: hsl(0, 0%, 100%);
   --color-grey-200: hsl(0, 0%, 93%);
@@ -104,10 +104,10 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--ff-body);
-  color: var(--color-primary-400);
+  color: var(--color-primary-300);
 }
 
-/* Header */
+/* HEADER */
 .nav-header {
   position: absolute;
   top: 0;
@@ -119,7 +119,7 @@ body {
   height: 2.4rem;
   padding-inline: 3.5rem;
   padding-block: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0%;
   right: 0%;
   cursor: pointer;
@@ -170,7 +170,7 @@ body {
   border: 2px solid hsl(222, 40%, 24%);
 }
 
-/* Hero section */
+/* HERO SECTION */
 .section-hero {
   height: 100vh;
   background-color: var(--color-grey-200);
@@ -190,7 +190,7 @@ body {
 
 .heading-primary {
   font-family: var(--ff-heading);
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   color: hsl(240, 100%, 7%);
 }
 
@@ -211,7 +211,7 @@ body {
   transform: translateY(-5%);
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media (max-width: 64em) {
   .nav-header__list {
     gap: 3.6rem;
@@ -300,5 +300,120 @@ body {
   }
   .hero-img {
     width: 100%;
+  }
+}
+
+/* PROJECTS SECTION */
+
+.section-projects {
+  background-color: var(--color-primary-400);
+  color: var(--color-grey-300);
+  padding-block: 3.2rem;
+}
+
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+  font-family: var(--ff-heading);
+}
+
+.projects-grid {
+  display: grid;
+  row-gap: 2.4rem;
+}
+
+.projects-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 3.6rem;
+  align-items: center;
+  background-color: var(--color-primary-700);
+  border-radius: 1rem;
+}
+
+.heading-tertiary {
+  font-size: 2.8rem;
+}
+
+.project-link:link,
+.project-link:visited {
+  text-decoration: none;
+  color: var(--color-grey-300);
+  transition: all 0.2s;
+}
+
+.project-link:hover,
+.project-link:active {
+  color: var(--color-accent-400);
+}
+
+.projects-technologies {
+  color: var(--color-accent-400);
+}
+
+.projects__image-box {
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__image-box-1 {
+  background-image: linear-gradient(
+      rgba(46, 64, 107, 0.4),
+      rgba(77, 108, 179, 0.4)
+    ),
+    url("images/omnifood.png");
+}
+.projects__image-box-2 {
+  background-image: linear-gradient(
+      rgba(46, 64, 107, 0.4),
+      rgba(77, 108, 179, 0.4)
+    ),
+    url("images/nexter.png");
+}
+.projects__image-box-3 {
+  background-image: linear-gradient(
+      rgba(46, 64, 107, 0.4),
+      rgba(77, 108, 179, 0.4)
+    ),
+    url("images/natours.png");
+}
+
+@media (max-width: 48em) {
+  .container-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .projects-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3.6rem;
+    align-items: center;
+  }
+
+  .container-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .projects__image-box {
+    height: 25rem;
+    grid-row: 1 / 2;
+    margin-bottom: 2.5rem;
   }
 }
