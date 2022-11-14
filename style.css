@@ -34,7 +34,7 @@ body {
 
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5; /* temporary line height */
+  line-height: 1.6; /* temporary line height */
 }
 
 /* A elements that don't have a class get default styles */
@@ -69,8 +69,8 @@ svg {
 /* MAIN CSS STYLINGS */
 :root {
   /* COLORS */
-  --color-primary-100: hsl(222, 40%, 60%);
-  --color-primary-200: hsl(222, 40%, 50%);
+  --color-primary-100: hsl(222, 40%, 90%);
+  --color-primary-200: hsl(222, 40%, 90%);
   --color-primary-300: hsl(222, 40%, 30%);
   --color-primary-400: hsl(222, 40%, 24%);
   --color-primary-500: hsl(222, 40%, 20%);
@@ -79,10 +79,12 @@ svg {
   --color-primary-800: ;
   --color-primary-900: hsl(222, 40%, 10%);
 
+  --color-accent-200: hsl(240, 100%, 60%);
+  --color-accent-300: hsl(240, 100%, 22%);
   --color-accent-400: hsl(240, 100%, 7%);
 
   --color-grey-100: hsl(0, 0%, 100%);
-  --color-grey-200: hsl(0, 0%, 93%);
+  --color-grey-200: hsl(0, 0%, 97%);
   --color-grey-300: hsl(0, 0%, 70%);
   --color-grey-400: hsl(0, 0%, 55%);
   --color-grey-500: hsl(0, 0%, 40%);
@@ -99,6 +101,7 @@ svg {
 /* Base stylings */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -204,6 +207,7 @@ body {
   border-radius: 50%;
   background-color: var(--color-primary-400);
   overflow: hidden;
+  box-shadow: 0 1.4rem 2.8rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .hero-img {
@@ -306,9 +310,9 @@ body {
 /* PROJECTS SECTION */
 
 .section-projects {
-  background-color: var(--color-primary-400);
-  color: var(--color-grey-300);
-  padding-block: 3.2rem;
+  background-color: var(--color-primary-100);
+  color: var(--color-accent-400);
+  padding-block: 9.6rem;
 }
 
 .container-projects {
@@ -323,7 +327,7 @@ body {
 
 .projects-grid {
   display: grid;
-  row-gap: 2.4rem;
+  row-gap: 6.4rem;
 }
 
 .projects-card {
@@ -331,8 +335,9 @@ body {
   grid-template-columns: 2fr 1fr;
   column-gap: 3.6rem;
   align-items: center;
-  background-color: var(--color-primary-700);
-  border-radius: 1rem;
+  background-color: var(--color-primary-200);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.6rem 1.2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .heading-tertiary {
@@ -342,7 +347,7 @@ body {
 .project-link:link,
 .project-link:visited {
   text-decoration: none;
-  color: var(--color-grey-300);
+  color: var(--color-accent-400);
   transition: all 0.2s;
 }
 
@@ -416,4 +421,53 @@ body {
     grid-row: 1 / 2;
     margin-bottom: 2.5rem;
   }
+}
+
+/* ABOUT SECTION */
+
+.section-about {
+  background-color: var(--color-grey-200);
+  padding-block: 9.6rem;
+  color: var(--color-accent-400);
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6.4rem;
+}
+
+.about__img-box {
+  border-radius: 1.2rem;
+  box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.about-img {
+}
+.about__text-box {
+}
+.about-text {
+}
+
+@media (max-width: 48em) {
+  .about-card {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.6rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .about-card {
+    grid-template-columns: 1fr;
+    column-gap: 3.6rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1.6rem;
+  }
+}
+
+.form-control {
+  resize: none;
 }

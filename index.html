@@ -46,9 +46,9 @@
           role="list"
         >
           <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link contact-link" href="#">Contact</a></li>
+          <li><a class="nav-link" href="#project">Projects</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link contact-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -76,7 +76,10 @@
         </div>
       </section>
 
-      <section class="section-projects" id="#projects">
+      <section
+        class="section-projects | d-flex align-items-center"
+        id="project"
+      >
         <div class="container container-projects">
           <h2 class="heading-secondary | pt-5">Projects</h2>
 
@@ -177,6 +180,75 @@
                 href="https://natours-ejnell.netlify.app"
               ></a>
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about | d-flex align-items-center" id="about">
+        <div class="container container-about">
+          <figure class="about-card">
+            <div class="about__img-box | mb-5">
+              <img class="about-img" src="images/img-3.jpg" alt="" />
+            </div>
+            <div class="about__text-box">
+              <h2 class="heading-secondary | mb-4">About Me</h2>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                accusamus commodi saepe eveniet ad ratione voluptate repellendus
+                similique quis nostrum.
+              </p>
+              <p class="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                accusamus commodi saepe eveniet ad ratione voluptate repellendus
+                similique quis nostrum.
+              </p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="container">
+          <h3 class="contact__text-box">Get in touch!</h3>
+          <div class="contact__form-box">
+            <form>
+              <div class="form-group">
+                <!-- <label for="exampleInputName1">Name</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputName1"
+                  placeholder="Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <!-- <label for="exampleInputEmail1">Email address</label> -->
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1"
+                  >Example textarea</label
+                > -->
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Message"
+                  <!--
+                  rows="3"
+                  --
+                >
+                ></textarea
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
         </div>
       </section>
