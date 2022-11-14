@@ -35,15 +35,20 @@
     <!-- Main Header -->
     <header>
       <!-- Top Nav -->
-      <nav class="nav-header">
+      <nav class="nav-header | d-flex align-items-center w-100">
+        <input type="checkbox" id="nav-check" />
+        <label for="nav-check" class="menu-icon">
+          <img src="images/menu-icon.png" alt="menu-icon" />
+        </label>
+
         <ul
-          class="nav-header__list | d-flex justify-content-lg-end | pt-5 pb-5 m-0 w-100"
+          class="nav-header__list | d-flex | pt-5 pb-5 m-lg-0 w-100"
           role="list"
         >
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link contact-link" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -51,7 +56,7 @@
       <section class="section-hero | d-flex">
         <div class="container container-hero | align-items-center">
           <div class="hero__text-box">
-            <h1 class="heading-primary | mb-4 mb-lg-2">Hello! I am EJ. 😉</h1>
+            <h1 class="heading-primary | mb-5 mb-lg-2">Hello! I am EJ. 😉</h1>
             <p class="hero-text | mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
               culpa quibusdam eveniet cum itaque sit nihil eos vel non ipsa.

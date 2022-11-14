@@ -70,14 +70,14 @@ svg {
 :root {
   /* COLORS */
   --color-primary-100: ;
-  --color-primary-200: ;
+  --color-primary-200: hsl(222, 40%, 50%);
   --color-primary-300: ;
   --color-primary-400: hsl(222, 40%, 24%);
-  --color-primary-500: ;
+  --color-primary-500: hsl(222, 40%, 24%);
   --color-primary-600: ;
   --color-primary-700: ;
   --color-primary-800: ;
-  --color-primary-900: ;
+  --color-primary-900: hsl(222, 40%, 10%);
 
   --color-accent-400: ;
 
@@ -96,6 +96,7 @@ svg {
   --ff-body: "Montserrat", sans-serif;
 }
 
+/* Base stylings */
 html {
   font-size: 62.5%;
 }
@@ -106,34 +107,70 @@ body {
   color: var(--color-primary-400);
 }
 
-.nav-header__list {
-  gap: 6.4rem;
-  font-size: 1.8rem;
-  padding-inline: 24rem;
+/* Header */
+.nav-header {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
-@media (max-width: 64em) {
-  .nav-header__list {
-    gap: 3.6rem;
-    padding-inline: 5rem;
-  }
+.menu-icon {
+  height: 2.4rem;
+  padding-inline: 3.5rem;
+  padding-block: 2rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
 }
 
-@media (max-width: 48em) {
-  .nav-header__list {
-    justify-content: center;
-    font-size: 2.2rem;
-  }
+#nav-check {
+  display: none;
 }
 
-.nav-header li a {
+.nav-header__list {
+  justify-content: end;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+  padding-inline: 10rem;
+}
+
+.nav-header__list li {
+  cursor: pointer;
+}
+
+.nav-header__list li a {
   text-decoration: none;
   color: var(--color-primary-400);
 }
 
+.nav-link:link,
+.nav-link:visited,
+.contact-link:link,
+.contact-link:visited {
+  transition: all 0.2s;
+  padding-inline: 3rem;
+  padding-block: 0.8rem;
+  background-color: transparent;
+  border-radius: 0.6rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-grey-100);
+  background-color: var(--color-primary-400);
+}
+
+.contact-link:link,
+.contact-link:visited {
+  border: 2px solid hsl(222, 40%, 24%);
+}
+
+/* Hero section */
 .section-hero {
   height: 100vh;
   background-color: var(--color-grey-200);
@@ -143,11 +180,6 @@ body {
   width: 120rem;
 }
 
-@media (max-width: 48em) {
-  .container {
-    width: 70rem;
-  }
-
 .container-hero {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -156,28 +188,10 @@ body {
   isolation: isolate;
 }
 
-@media (max-width: 64em) {
-  .container-hero {
-    column-gap: 5.6rem;
-  }
-}
-
-@media (max-width: 48em) {
-  .container-hero {
-    grid-template-columns: 1fr;
-  }
-}
-
 .heading-primary {
   font-family: var(--ff-heading);
   font-size: 4.2rem;
   color: hsl(240, 100%, 7%);
-}
-
-@media (max-width: 48em) {
-  .heading-primary {
-    text-align: center;
-  }
 }
 
 .hero-text {
@@ -192,13 +206,99 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 48em) {
-  .hero__img-box {
-    align-self: start;
-  }
-}
-
 .hero-img {
   width: 30rem;
   transform: translateY(-5%);
+}
+
+/* Media Queries */
+@media (max-width: 64em) {
+  .nav-header__list {
+    gap: 3.6rem;
+    font-size: 2.2rem;
+    padding-inline: 5rem;
+    justify-content: end;
+  }
+
+  .container-hero {
+    column-gap: 5.6rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-header__list {
+    gap: 7.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-primary-400);
+    font-size: 2.4rem;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  #nav-check:checked ~ .nav-header__list {
+    left: 0%;
+  }
+
+  .nav-header__list li {
+    display: block;
+  }
+
+  .nav-header__list li a {
+    color: #fff;
+  }
+
+  .section-hero {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container-hero {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
+  }
+
+  .heading-primary {
+    text-align: center;
+  }
+
+  .hero__img-box {
+    align-self: start;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 26em) {
+  .section-hero {
+    padding-inline: 1.6rem;
+  }
+  .container-hero {
+    align-content: center;
+    row-gap: 1.6rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .hero-text {
+    font-size: 1.6rem;
+  }
+  .hero__img-box {
+    align-self: start;
+    justify-content: center;
+    width: 70%;
+  }
+  .hero-img {
+    width: 100%;
+  }
 }
