@@ -1,0 +1,54 @@
+Specific Requirements 
+1. General Page Styles
+  - Custom web page font style using Google Fonts.
+  - Add text and background colors to give your web page more life.
+2. Page Responsiveness
+  The page should maintain its responsiveness on three types of devices (mobile, tablet and desktop).
+  - For Mobile Iphone 12 pro
+  - For Tablet Ipad Air
+3. Add social media links (e.g. Facebook, LinkedIn).
+
+Features
+1. HomeLanding Page
+2. About Me Section
+3. Projects Section
+4. Contact Me Section
+5. Navbar
+
+Reminders 
+1. All CSS code must be in an external CSS file.
+2. There should be no br elements in the source code.
+3. There should be no inline or internal CSS code.
+4. There should be no default web page fonts (Times New Roman).
+5. There should be no placeholder text in the page (like the Lorem Ipsum).
+6. There should be no horizontal scrolls when viewing the page.
+7. There should be no dead links.
+8. Do not create another website other than the required developer portfolio.
+9. Do not use templates found in other sites.
+
+Sample outputs
+- httpsteejaecalinao.github.iocharles-sample#landing
+- httpsteejaecalinao.github.iocapstone1-soryu#landing
+
+Stretch Goal
+- Add a map in your contact section
+
+Student Resources
+Colors
+httpsmycolor.space
+httpscolorhunt.co
+httpscolor.adobe.comcreatecolor-wheel
+
+Images
+httpspixabay.com
+httpsunsplash.com
+httpswww.pexels.com
+
+Icons and Illustrations
+httpswww.freepik.com
+httpsshape.so
+httpsstoryset.com
+
+For website inspiration layout
+httpsdribbble.com
+httpswww.behance.net
