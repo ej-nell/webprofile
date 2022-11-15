@@ -188,6 +188,11 @@ body {
   isolation: isolate;
 }
 
+/* .primary-text-box::before {
+  content: "";
+  position: absolute;
+} */
+
 .heading-primary {
   font-family: var(--ff-heading);
   font-size: 4.8rem;
@@ -411,6 +416,11 @@ body {
 
   .heading-secondary {
     margin-bottom: 3.2rem;
+  }
+
+  .project-link:hover,
+  .project-link:active {
+    pointer-events: none;
   }
 }
 
