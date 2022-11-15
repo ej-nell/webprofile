@@ -374,22 +374,22 @@ body {
 
 .projects__image-box-1 {
   background-image: linear-gradient(
-      rgba(46, 64, 107, 0.4),
-      rgba(77, 108, 179, 0.4)
+      rgba(46, 64, 107, 0.3),
+      rgba(77, 108, 179, 0.3)
     ),
     url("images/omnifood.png");
 }
 .projects__image-box-2 {
   background-image: linear-gradient(
-      rgba(46, 64, 107, 0.4),
-      rgba(77, 108, 179, 0.4)
+      rgba(46, 64, 107, 0.3),
+      rgba(77, 108, 179, 0.3)
     ),
     url("images/nexter.png");
 }
 .projects__image-box-3 {
   background-image: linear-gradient(
-      rgba(46, 64, 107, 0.4),
-      rgba(77, 108, 179, 0.4)
+      rgba(46, 64, 107, 0.3),
+      rgba(77, 108, 179, 0.3)
     ),
     url("images/natours.png");
 }
@@ -422,6 +422,7 @@ body {
 
   .projects__image-box {
     height: 25rem;
+    width: 100%;
     grid-row: 1 / 2;
     margin-bottom: 2.5rem;
   }
@@ -483,15 +484,16 @@ body {
   gap: 0.8rem;
 }
 
+.contact__text-box .heading-tertiary {
+  color: var(--color-accent-400);
+}
+
 .logos-list {
   gap: 3.6rem;
 }
 
 .logo-link:hover g path {
   fill: rgba(0, 0, 36, 0.65) !important;
-}
-
-.contact__form-box {
 }
 
 .contact-form {
@@ -531,4 +533,33 @@ body {
   padding: 1rem 2.4rem;
   font-size: 1.6rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 48em) {
+  .container-contact {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .logos-list {
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    align-self: center;
+  }
+}
+/* FOOTER */
+.footer {
+  background-color: var(--color-accent-400);
+  padding-block: 0.6rem;
+  color: var(--color-grey-300);
+  font-size: 1.4rem;
+}
+
+.container-footer,
+.footer-text {
+  margin: 0;
+  text-align: center;
 }
