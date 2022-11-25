@@ -1,0 +1,163 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-main);
+  color: var(--color-text);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.6; /* temporary line height */
+}
+
+/* a elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  /* COLORS */
+  --color-primary-400: #414353;
+  --color-primary-900: #10110d;
+  --color-accent-light-400: #e2dbbe;
+  --color-accent-dark-400: #c19875;
+  --color-grey-light-400: #95a3a4;
+  --color-grey-dark-400: #697268;
+  --color-text: #f7f7f7;
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  /* FONT FAMILY */
+  --ff-main: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.section-hero {
+  background-image: linear-gradient(90deg, #414535 62.5%, transparent 62.5%, #d5d6aa 62.5%);
+}
+
+.container-hero {
+  max-width: 120rem;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  isolation: isolate;
+}
+
+.heading-primary {
+  font-size: 1.8rem;
+}
+
+.hero-slogan {
+  font-size: 3.6rem;
+}
+
+.glow-name {
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.hero__img-box {
+  height: 100%;
+  position: relative;
+}
+
+.hero__img-box::after {
+  content: "";
+  display: inline-block;
+  height: 40%;
+  width: 60%;
+  border: 0.3rem solid #c19875;
+  box-shadow: 0 1.5rem 2.5rem 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 60%;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 32.5%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=style.css.map */

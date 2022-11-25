@@ -1,0 +1,67 @@
+.section-hero {
+  background-image: linear-gradient(
+    90deg,
+    #414535 62.5%,
+    transparent 62.5%,
+    #d5d6aa 62.5%
+  );
+}
+
+.container-hero {
+  max-width: 120rem;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  isolation: isolate;
+}
+
+.hero__text-box {
+}
+
+.heading-primary {
+  font-size: 1.8rem;
+}
+
+.hero-slogan {
+  font-size: 3.6rem;
+}
+
+.glow-name {
+  font-weight: 400;
+  font-size: 3.6rem;
+}
+
+.hero-intro {
+}
+
+.work {
+}
+
+.hero__img-box {
+  height: 100%;
+  position: relative;
+}
+
+.hero__img-box::after {
+  content: "";
+  display: inline-block;
+  height: 40%;
+  width: 60%;
+  border: 0.3rem solid #c19875;
+  box-shadow: 0 1.5rem 2.5rem 0 rgba($color: #000000, $alpha: 0.15);
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  z-index: -1;
+}
+
+.hero-img {
+  width: 60%;
+  box-shadow: 0 1rem 2rem 0 rgba($color: #000000, $alpha: 0.6);
+  position: absolute;
+  top: 50%;
+  left: 32.5%;
+  transform: translate(-50%, -50%);
+}

@@ -4,87 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-
-    <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Favicon -->
     <link rel="shortcut icon" href="images/Cartoonify.png" type="image/png" />
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dist/style.css" />
     <title>EJ Urbina - Front End Developer</title>
   </head>
   <body>
     <!-- Main Header -->
     <header>
       <!-- Top Nav -->
-      <nav class="nav-header | d-flex align-items-center w-100">
-        <input type="checkbox" id="nav-check" />
-        <label for="nav-check" class="menu-icon">
-          <img src="images/menu-icon.png" alt="menu-icon" />
-        </label>
-
-        <ul
-          class="nav-header__list | d-flex | pt-5 pb-5 m-lg-0 w-100"
-          role="list"
-        >
+      <!-- <nav class="nav-header">
+        <ul class="nav-header__list | flex" role="list">
           <li><a class="nav-link" href="#">Home</a></li>
           <li><a class="nav-link" href="#project">Projects</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link contact-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <main>
-      <section class="section-hero | d-flex">
-        <div class="container container-hero | align-items-center">
+      <section class="section-hero">
+        <div class="container-hero">
           <div class="hero__text-box">
-            <div class="primary-text-box">
-              <h1 class="heading-primary">Hi, my name is EJ! 😊</h1>
-            </div>
-            <p class="hero-text | mb-3">
-              I am a licensed <span class="work">Civil Engineer</span> planning
-              to shift careers as I aspire to become a successful
-              <span class="work">Software Engineer.</span>
+            <p class="heading-primary">
+              Hi there! I am
+              <span class="glow-name">EJ!</span>
             </p>
-            <p class="hero-text | mb-3">
+            <p class="hero-slogan">
+              I'm a <span class="hero-work">Civil Engineer 👷‍♂️</span> turned
+              <span class="hero-work">Web Developer. 💻</span>
+            </p>
+            <!-- <p class="hero-intro">
               Enjoying and loving working with tech, combined with the
               problem-solving skills gained as an engineer, will certainly help
               me become a successful web developer!
             </p>
-            <p class="hero-text | mb-3">
+            <p class="hero-intro">
               I am currently enrolled at Zuitt Coding Bootcamp. 📚
-            </p>
+            </p> -->
           </div>
           <div class="hero__img-box">
-            <img
-              class="hero-img | img-fluid"
-              src="images/avataaars.png"
-              alt="cartoon image of EJ"
-            />
+            <img class="hero-img" src="./images/img-3.jpg" alt="" />
           </div>
         </div>
       </section>
 
-      <section
+      <!-- <section
         class="section-projects | d-flex align-items-center"
         id="project"
       >
@@ -193,9 +163,9 @@
             </figure>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-about | d-flex align-items-center" id="about">
+      <!-- <section class="section-about | d-flex align-items-center" id="about">
         <div class="container container-about">
           <figure class="about-card">
             <div class="about__img-box | mb-5">
@@ -247,9 +217,9 @@
             </div>
           </figure>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section-contact" id="contact">
+      <!-- <section class="section-contact" id="contact">
         <div class="container container-contact">
           <div class="contact__text-box | d-flex flex-column">
             <h3 class="heading-tertiary">I'd love to hear from you!</h3>
@@ -346,7 +316,6 @@
           <div class="contact__form-box">
             <form class="contact-form | d-flex flex-column">
               <div class="form-group">
-                <!-- <label for="exampleInputName1">Name</label> -->
                 <input
                   type="text"
                   class="form-control"
@@ -356,7 +325,6 @@
               </div>
 
               <div class="form-group">
-                <!-- <label for="exampleInputEmail1">Email address</label> -->
                 <input
                   type="email"
                   class="form-control"
@@ -379,20 +347,14 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Footer -->
-      <footer class="footer | d-flex justify-content-center">
+      <!-- <footer class="footer | d-flex justify-content-center">
         <div class="container container-footer">
           <p class="footer-text">&copy; Design and Built by EJ Urbina</p>
         </div>
-      </footer>
-
-      <!-- TODO
-      -Close navigation
-      -Projects section
-      -Forms
-      -->
+      </footer> -->
     </main>
     <!-- Bootstrap script -->
     <script
