@@ -1,22 +1,17 @@
 :root {
   /* COLORS */
-  --color-primary-400: hsl(209, 100%, 20%);
-  --color-secondary-400: hsl(211, 100%, 12%);
-  --color-tertiary-400: hsl(216, 100%, 4%);
+  --color-primary-400: #141516;
 
-  --color-accent-primary-400: hsl(46, 100%, 32%);
-  --color-accent-secondary-400: hsl(50, 100%, 52%);
+  --color-accent-400: #ffd43b;
 
-  --color-grey-100: #f7f7f7;
+  --color-grey-100: #ffffffe6;
+  --color-grey-600: #2c2c2d;
 
-  --color-grey-400: hsl(210, 9%, 31%);
-  --color-grey-600: #ccd6f6;
-
-  --color-white: hsl(0, 0%, 100%);
-  --color-black: hsl(0, 0%, 0%);
+  --color-white: #ffffff;
+  --color-black: rgb(0, 0, 0);
 
   /* FONT FAMILY */
-  --ff-heading: "DM Serif Display", serif;
-  --ff-hero: "DM Serif Display", serif;
-  --ff-body: "Public Sans", sans-serif;
+  --ff-heading: "Montserrat", sans-serif;
+  --ff-hero: "Montserrat", sans-serif;
+  --ff-body: "Montserrat", sans-serif;
 }

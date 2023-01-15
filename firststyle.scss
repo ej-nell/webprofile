@@ -1,0 +1,57 @@
+.section-hero {
+  height: 100vh;
+  background-color: var(--color-primary-400);
+  position: relative;
+}
+
+.container-hero {
+  max-width: 130rem;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.sub-heading::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background-color: var(--color-grey-400);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.hero__text-box {
+  width: 100%;
+}
+
+.heading-primary {
+  color: var(--color-grey-600);
+  font-family: var(--ff-heading);
+  font-size: 8rem;
+  letter-spacing: -0.1rem;
+}
+
+.hero-name {
+  color: var(--color-accent-primary-400);
+}
+
+.heading-secondary {
+  font-family: var(--ff-heading);
+  font-size: 4.8rem;
+}
+.hero-slogan {
+  font-size: 2rem;
+  font-family: var(--ff-body);
+}
+.hero-work {
+  color: var(--color-accent-primary-400);
+  font-weight: 700;
+}
