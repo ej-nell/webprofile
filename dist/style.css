@@ -4,10 +4,9 @@ html {
 }
 
 body {
-  color: var(--color-grey-600);
+  color: var(--color-grey-100);
   font-size: 1.6rem;
   font-family: var(--ff-body);
-  background-color: var(--color-primary-400);
 }
 
 /* Box sizing rules */
@@ -78,14 +77,16 @@ svg {
 }
 :root {
   /* COLORS */
-  --color-primary-400: #141516;
-  --color-accent-400: #ffd43b;
+  --color-primary-400: rgba(170, 219, 236, 0.5);
+  --color-accent-400: #ff715b;
+  --color-background-primary: #def0fa;
+  --color-background-secondary: #121e27;
   --color-grey-100: #ffffffe6;
   --color-grey-600: #2c2c2d;
   --color-white: #ffffff;
   --color-black: rgb(0, 0, 0);
   /* FONT FAMILY */
-  --ff-heading: "Montserrat", sans-serif;
+  --ff-heading: "Bitter", sans-serif;
   --ff-hero: "Montserrat", sans-serif;
   --ff-body: "Montserrat", sans-serif;
 }
@@ -109,9 +110,7 @@ a:active {
 
 .nav-header__list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .nav-header-link:link,
@@ -125,26 +124,89 @@ a:active {
   color: var(--color-grey-100);
   display: inline-block;
   padding: 2rem 10rem;
-  border: 1px solid #2c2c2d;
-  border-right: none;
   transition: all 0.2s;
-}
-
-.nav-header__list li:last-child {
-  border-right: 1px solid #2c2c2d;
-}
-
-.nav-header-link-active {
-  background-color: var(--color-grey-600);
 }
 
 .nav-header-link:hover,
 .nav-header-link:active {
-  color: var(--color-accent-400);
-  background-color: var(--color-grey-600);
+  color: var(--color-grey-600);
+  background-color: var(--color-grey-100);
+}
+
+.section-hero {
+  background-color: var(--color-background-secondary);
+  position: relative;
+  height: 100vh;
+}
+
+.container-hero {
+  display: grid;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: var(--color-grey-100);
+  font-size: 5.6rem;
+  font-family: var(--ff-hero);
+  margin-bottom: 3.6rem;
+}
+
+.hero-name {
+  position: relative;
+}
+
+.hero-name::before {
+  content: "";
+  display: block;
+  height: 2.2rem;
+  width: 100%;
+  background-color: var(--color-accent-400);
+  position: absolute;
+  top: 57.5%;
+  right: 0%;
+  z-index: -1;
+}
+
+.hero-job {
+  position: relative;
+}
+
+.hero-job::before {
+  content: "";
+  display: block;
+  height: 2.2rem;
+  width: 100%;
+  background-color: var(--color-accent-400);
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  z-index: -1;
+}
+
+.hero-social-list {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.hero-social-icon {
+  fill: var(--color-accent-400);
+}
+
+.hero-introduction-box {
+  max-width: 55rem;
+}
+
+.hero-introduction {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .container {
-  min-width: 130rem;
-  padding-inline: 3rem;
+  max-width: 150rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

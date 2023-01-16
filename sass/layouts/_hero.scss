@@ -1,0 +1,72 @@
+.section-hero {
+  background-color: var(--color-background-secondary);
+  position: relative;
+  height: 100vh;
+}
+
+.container-hero {
+  display: grid;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: var(--color-grey-100);
+  font-size: 5.6rem;
+  font-family: var(--ff-hero);
+  margin-bottom: 3.6rem;
+}
+
+.hero-name {
+  position: relative;
+}
+
+.hero-name::before {
+  content: "";
+  display: block;
+  height: 2.2rem;
+  width: 100%;
+  background-color: var(--color-accent-400);
+  position: absolute;
+  top: 57.5%;
+  right: 0%;
+  z-index: -1;
+}
+
+.hero-job {
+  position: relative;
+}
+
+.hero-job::before {
+  content: "";
+  display: block;
+  height: 2.2rem;
+  width: 100%;
+  background-color: var(--color-accent-400);
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  z-index: -1;
+}
+
+.hero-social-list {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.hero-social-icon {
+  fill: var(--color-accent-400);
+}
+
+.hero-introduction-box {
+  max-width: 55rem;
+}
+
+.hero-introduction {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
