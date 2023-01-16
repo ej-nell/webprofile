@@ -1,18 +1,16 @@
 :root {
   /* COLORS */
-  --color-primary-400: rgba(170, 219, 236, 0.5);
+  --color-primary-400: hsl(206, 37%, 11%);
 
-  // --color-accent-400: #0f1b61;
-  --color-accent-400: #ff715b;
+  --color-accent-400: hsl(8, 100%, 68%);
 
-  --color-background-primary: #def0fa;
-  --color-background-secondary: #121e27;
+  --color-background-primary: hsl(201, 74%, 93%);
 
-  --color-grey-100: #ffffffe6;
-  --color-grey-600: #2c2c2d;
+  --color-grey-100: hsl(0, 0%, 93%);
+  --color-grey-600: hsl(240, 1%, 17%);
 
-  --color-white: #ffffff;
-  --color-black: rgb(0, 0, 0);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
 
   /* FONT FAMILY */
   --ff-heading: "Bitter", sans-serif;

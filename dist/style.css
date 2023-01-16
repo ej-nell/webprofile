@@ -77,14 +77,13 @@ svg {
 }
 :root {
   /* COLORS */
-  --color-primary-400: rgba(170, 219, 236, 0.5);
-  --color-accent-400: #ff715b;
-  --color-background-primary: #def0fa;
-  --color-background-secondary: #121e27;
-  --color-grey-100: #ffffffe6;
-  --color-grey-600: #2c2c2d;
-  --color-white: #ffffff;
-  --color-black: rgb(0, 0, 0);
+  --color-primary-400: hsl(206, 37%, 11%);
+  --color-accent-400: hsl(8, 100%, 68%);
+  --color-background-primary: hsl(201, 74%, 93%);
+  --color-grey-100: hsl(0, 0%, 93%);
+  --color-grey-600: hsl(240, 1%, 17%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
   /* FONT FAMILY */
   --ff-heading: "Bitter", sans-serif;
   --ff-hero: "Montserrat", sans-serif;
@@ -108,33 +107,42 @@ a:active {
   text-decoration: none;
 }
 
+.nav-header {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-header__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav-header-link:link,
 .nav-header-link:visited {
   font-family: var(--ff-body);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2rem;
   color: var(--color-grey-100);
   display: inline-block;
-  padding: 2rem 10rem;
+  padding: 1.5rem 8rem;
+  background-color: transparent;
   transition: all 0.2s;
 }
 
 .nav-header-link:hover,
 .nav-header-link:active {
-  color: var(--color-grey-600);
-  background-color: var(--color-grey-100);
+  background-color: var(--color-accent-400);
 }
 
 .section-hero {
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-primary-400);
   position: relative;
   height: 100vh;
 }
@@ -150,7 +158,7 @@ a:active {
 
 .heading-primary {
   color: var(--color-grey-100);
-  font-size: 5.6rem;
+  font-size: 6.4rem;
   font-family: var(--ff-hero);
   margin-bottom: 3.6rem;
 }
@@ -162,12 +170,12 @@ a:active {
 .hero-name::before {
   content: "";
   display: block;
-  height: 2.2rem;
-  width: 100%;
+  height: 2.25rem;
+  width: 105%;
   background-color: var(--color-accent-400);
   position: absolute;
   top: 57.5%;
-  right: 0%;
+  right: -2.5%;
   z-index: -1;
 }
 
@@ -178,12 +186,12 @@ a:active {
 .hero-job::before {
   content: "";
   display: block;
-  height: 2.2rem;
-  width: 100%;
+  height: 2.25rem;
+  width: 105%;
   background-color: var(--color-accent-400);
   position: absolute;
   bottom: 10%;
-  left: 0%;
+  left: -2%;
   z-index: -1;
 }
 
@@ -195,10 +203,15 @@ a:active {
 
 .hero-social-icon {
   fill: var(--color-accent-400);
+  transition: all 0.3s;
+}
+
+.hero-social-icon:hover {
+  fill: var(--color-grey-100);
 }
 
 .hero-introduction-box {
-  max-width: 55rem;
+  max-width: 60rem;
 }
 
 .hero-introduction {
