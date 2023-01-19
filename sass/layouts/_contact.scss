@@ -2,10 +2,26 @@
   padding-block: 16rem;
 }
 
-.container-contact {
+.contact-grid {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
   column-gap: 9.6rem;
+}
+
+.contact-heading {
+  position: relative;
+}
+
+.contact-heading::before {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 100%;
+  background-color: var(--color-accent-400);
+  position: absolute;
+  top: 65%;
+  right: 0%;
+  z-index: -1;
 }
 
 .contact__text-box {
