@@ -1,7 +1,7 @@
 .section-projects {
   background-color: var(--color-primary-400);
   color: var(--color-grey-100);
-  padding-block: 9.6rem;
+  padding-block: 16rem;
   isolation: isolate;
 }
 
@@ -24,9 +24,8 @@
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 4.8rem;
+  column-gap: 3.6rem;
   row-gap: 3.6rem;
-  padding-inline: 4.8rem;
 }
 
 .projects__card {
@@ -42,16 +41,16 @@
 }
 
 .projects__card--image-box {
-  margin-bottom: 3.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .projects-image {
-  opacity: 94%;
+  opacity: 60%;
 }
 
 .projects__card--text-box {
   padding-inline: 2.8rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 1.8rem;
 }
 
 .projects-title:link,
@@ -73,7 +72,7 @@
 .projects__tools-used {
   display: flex;
   gap: 1.2rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .projects-tools {
@@ -94,7 +93,7 @@
 .project-github-link:visited {
   font-size: 1.8rem;
   color: var(--color-grey-100);
-  background-color: var(--color-accent-400);
+  background-color: var(--color-primary-400);
   padding: 0.4rem 1.4rem;
   border-radius: 8px;
   transition: all 0.2s;

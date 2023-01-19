@@ -1,0 +1,73 @@
+.section-contact {
+  background-color: var(--color-grey-200);
+  padding-block: 9.6rem;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  column-gap: 9.6rem;
+}
+
+/*  DOUBLE CHECK */
+.contact__text-box {
+  gap: 0.8rem;
+}
+
+.contact__text-box .heading-tertiary {
+  color: var(--color-accent-400);
+}
+
+.email-link:link,
+.email-link:visited {
+  text-decoration: none;
+  color: var(--color-primary-400);
+  font-weight: 600;
+  margin: 0;
+}
+
+.logos-list {
+  gap: 3.6rem;
+}
+
+.logo-link:hover g path {
+  fill: rgba(0, 0, 36, 0.65) !important;
+}
+
+.contact-form {
+  gap: 1.2rem;
+}
+
+.form-control {
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  border: 0.15rem solid rgba(0, 0, 36, 0.75);
+  resize: none;
+}
+
+.form-control:focus {
+  color: var(--color-grey-700);
+  background-color: #fff;
+  border-color: hsl(240, 100%, 7%);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 0 36 / 50%);
+}
+
+.btn {
+  color: #fff;
+  background-color: #000024;
+  border: 0.15rem solid #000024;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 36, 0.8);
+  border: 0.15rem solid #000024;
+}
+
+.btn-primary {
+  align-self: flex-start;
+  padding: 1rem 2.4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}

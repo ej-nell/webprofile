@@ -78,7 +78,7 @@ svg {
 }
 :root {
   /* COLORS */
-  --color-primary-200: hsl(207, 36%, 15%);
+  --color-primary-200: hsl(207, 36%, 17%);
   --color-primary-300: rgba(18, 29, 38, 0.9);
   --color-primary-400: hsl(206, 37%, 11%);
   --color-accent-400: hsl(8, 100%, 68%);
@@ -146,6 +146,15 @@ a:active {
 .nav-header-link:hover,
 .nav-header-link:active {
   background-color: var(--color-accent-400);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary-400);
+  padding-block: 1.2rem;
+  color: var(--color-grey-100);
+  font-size: 1.6rem;
 }
 
 .section-hero {
@@ -229,7 +238,7 @@ a:active {
   background-color: var(--color-white);
   display: flex;
   align-items: center;
-  padding-block: 9.6rem;
+  padding-block: 16rem;
   isolation: isolate;
 }
 
@@ -322,7 +331,7 @@ a:active {
 .section-projects {
   background-color: var(--color-primary-400);
   color: var(--color-grey-100);
-  padding-block: 9.6rem;
+  padding-block: 16rem;
   isolation: isolate;
 }
 
@@ -345,10 +354,9 @@ a:active {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 4.8rem;
-       column-gap: 4.8rem;
+  -moz-column-gap: 3.6rem;
+       column-gap: 3.6rem;
   row-gap: 3.6rem;
-  padding-inline: 4.8rem;
 }
 
 .projects__card {
@@ -364,16 +372,16 @@ a:active {
 }
 
 .projects__card--image-box {
-  margin-bottom: 3.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .projects-image {
-  opacity: 94%;
+  opacity: 60%;
 }
 
 .projects__card--text-box {
   padding-inline: 2.8rem;
-  padding-bottom: 2.8rem;
+  padding-bottom: 1.8rem;
 }
 
 .projects-title:link,
@@ -395,7 +403,7 @@ a:active {
 .projects__tools-used {
   display: flex;
   gap: 1.2rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .projects-tools {
@@ -416,7 +424,7 @@ a:active {
 .project-github-link:visited {
   font-size: 1.8rem;
   color: var(--color-grey-100);
-  background-color: var(--color-accent-400);
+  background-color: var(--color-primary-400);
   padding: 0.4rem 1.4rem;
   border-radius: 8px;
   transition: all 0.2s;
@@ -431,8 +439,97 @@ a:active {
 }
 
 .section-contact {
-  height: 100vh;
-  padding-block: 9.6rem;
+  padding-block: 16rem;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+  -moz-column-gap: 9.6rem;
+       column-gap: 9.6rem;
+}
+
+.contact__text-box .heading-quaternary {
+  margin-bottom: 2.4rem;
+}
+
+.contact__text {
+  margin-bottom: 1.6rem;
+}
+
+.contact-email-link:link,
+.contact-email-link:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-primary-400);
+  transition: all 0.1s;
+}
+
+.contact-email-link:hover,
+.contact-email-link:active {
+  color: var(--color-accent-400);
+}
+
+.contact-social-list {
+  display: flex;
+  gap: 3.6rem;
+}
+
+.contact-social-icon {
+  fill: var(--color-primary-400);
+  transition: all 0.1s;
+}
+
+.contact-social-icon:hover {
+  fill: var(--color-accent-400);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.form-control {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 0.15rem solid hsla(207deg, 36%, 11%, 0.65);
+  border-radius: 4px;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  resize: none;
+  transition: all 0.1s;
+}
+
+.form-control:focus {
+  color: var(--color-grey-600);
+  background-color: #fff;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 1.5px hsl(8deg, 100%, 68%);
+}
+
+.btn {
+  color: var(--color-grey-600);
+  border: none;
+  transition: 0.1s;
+}
+
+.btn-primary {
+  align-self: flex-start;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-grey-100);
+  text-transform: uppercase;
+  padding: 1rem 2.4rem;
+  background-color: var(--color-primary-400);
+  border-radius: 4px;
+  box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-400);
 }
 
 .container {
