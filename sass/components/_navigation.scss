@@ -28,17 +28,16 @@
 }
 
 .hamburger {
-  // display: none;
+  display: none;
   position: absolute;
   right: 3rem;
   top: 3rem;
   height: 40px;
   width: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
-  background-color: var(--color-grey-100);
+  background-color: var(--color-primary-200);
   border-radius: 50%;
 
   &::before {
@@ -46,7 +45,7 @@
     position: absolute;
     width: 20px;
     height: 3px;
-    background-color: var(--color-grey-600);
+    background-color: var(--color-grey-100);
     transform: translateY(-6px);
     transition: all 0.3s;
   }
@@ -56,9 +55,13 @@
     position: absolute;
     width: 20px;
     height: 3px;
-    background-color: var(--color-grey-600);
-    box-shadow: 0 6px 0 hsl(240, 1%, 5%);
+    background-color: var(--color-grey-100);
+    box-shadow: 0 6px 0 hsl(0, 0%, 93%);
     transition: all 0.3s;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 }
 

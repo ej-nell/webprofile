@@ -144,16 +144,16 @@ a:active {
 }
 
 .hamburger {
+  display: none;
   position: absolute;
   right: 3rem;
   top: 3rem;
   height: 40px;
   width: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 3;
-  background-color: var(--color-grey-100);
+  background-color: var(--color-primary-200);
   border-radius: 50%;
 }
 .hamburger::before {
@@ -161,7 +161,7 @@ a:active {
   position: absolute;
   width: 20px;
   height: 3px;
-  background-color: var(--color-grey-600);
+  background-color: var(--color-grey-100);
   transform: translateY(-6px);
   transition: all 0.3s;
 }
@@ -170,9 +170,14 @@ a:active {
   position: absolute;
   width: 20px;
   height: 3px;
-  background-color: var(--color-grey-600);
-  box-shadow: 0 6px 0 hsl(240deg, 1%, 5%);
+  background-color: var(--color-grey-100);
+  box-shadow: 0 6px 0 hsl(0deg, 0%, 93%);
   transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 }
 
 .hamburger.active::before {
@@ -289,7 +294,7 @@ a:active {
 }
 @media (max-width: 768px) {
   .heading-primary {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
   }
 }
 
