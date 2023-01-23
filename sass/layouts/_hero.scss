@@ -17,6 +17,14 @@
   font-size: 6.4rem;
   font-family: var(--ff-hero);
   margin-bottom: 3.6rem;
+
+  @media (max-width: 1200px) {
+    font-size: 5.4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4.2rem;
+  }
 }
 
 .hero-name {
@@ -33,6 +41,14 @@
   top: 65%;
   right: 0%;
   z-index: -1;
+
+  @media (max-width: 1200px) {
+    height: 1.75rem;
+  }
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 
 .hero-job {
@@ -49,6 +65,14 @@
   bottom: 5%;
   left: 0%;
   z-index: -1;
+
+  @media (max-width: 1200px) {
+    height: 1.75rem;
+  }
+
+  @media (max-width: 425px) {
+    display: none;
+  }
 }
 
 .hero-social-list {
@@ -60,6 +84,10 @@
 .hero-social-icon {
   fill: var(--color-accent-400);
   transition: all 0.3s;
+
+  @media (max-width: 1200px) {
+    height: 4rem;
+  }
 }
 
 .hero-social-icon:hover {
@@ -73,4 +101,8 @@
 .hero-introduction {
   font-size: 2rem;
   margin-bottom: 2.4rem;
+
+  @media (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
 }

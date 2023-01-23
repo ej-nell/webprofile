@@ -1,11 +1,23 @@
 .section-contact {
-  padding-block: 16rem;
+  padding-block: 17rem;
+
+  @media (max-width: 1200px) {
+    padding-block: 8rem;
+  }
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
   column-gap: 9.6rem;
+
+  @media (max-width: 1200px) {
+    column-gap: 4.8rem;
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-heading {
@@ -50,6 +62,9 @@
 .contact-social-list {
   display: flex;
   gap: 3.6rem;
+  @media (max-width: 425px) {
+    margin-bottom: 4.8rem;
+  }
 }
 
 .contact-social-icon {

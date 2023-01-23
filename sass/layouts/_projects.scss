@@ -3,6 +3,10 @@
   color: var(--color-grey-100);
   padding-block: 16rem;
   isolation: isolate;
+
+  @media (max-width: 1200px) {
+    padding-block: 8rem;
+  }
 }
 
 .projects-heading {
@@ -26,6 +30,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3.6rem;
   row-gap: 3.6rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__card {
